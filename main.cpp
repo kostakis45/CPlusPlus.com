@@ -1,44 +1,35 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-    int person[10], counter = 0, answer = 0;
-
-    for (int i = 0; i < 10; i++)
+    int number, counter = 0;
+    while (number != 5)
     {
-        cout << "Give some pancakes to person " << i + 1 << ":";
-        cin >> person[i];
-    }
+        cout << "Please enter a number that is not " << counter << ":", " ";
+        cin >> number;
 
-    for (int i = 0; i < 10; i++)
-    {
-        if (person[i] > answer)
+        if (number == counter)
         {
-            counter = i + 1;
-            answer = person[i];
+            break;
+        }
+
+        counter++;
+
+        if (counter == 10)
+        {
+            cout << "Wow, you're more patient then I am, you win" << endl;
+            system("pause");
+            break;
+        }
+
+        if (number == 5)
+        {
+            cout << "Hey! you weren't supposed to enter 5!" << endl;
+            system("pause");
+            break;
         }
     }
 
-    cout << "The person who ate the most pancakes is person " << counter << " with total of " << answer << " pancakes." << endl;
-
-    for (int i = 0; i < 10; i++)
-    {
-        if (person[i] < answer)
-        {
-            counter = i + 1;
-            answer = person[i];
-        }
-    }
-
-    cout << "The person who ate the least pancakes is person " << counter << " with total of " << answer << " pancakes." << endl;
-
-    for (int i = 0; i < 10; i++)
-    {
-        cout << "Person " << i + 1 << " ate:" << person[i] << " pancakes." << endl;
-    }
-
-    system("pause");
     return 0;
 }
