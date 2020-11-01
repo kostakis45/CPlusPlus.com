@@ -18,7 +18,7 @@ int main()
 
         if (counter == 10)
         {
-            cout << "Wow, you're more patient then I am, you win" << endl;
+            cout << "Wow, you're more patient then I am, you win." << endl;
             system("pause");
             break;
         }
