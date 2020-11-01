@@ -29,6 +29,7 @@ int main()
         {
             counter = i + 1;
             answer = person[i];
+            
         }
     }
 
