@@ -25,7 +25,7 @@ int main()
 
         if (number == 5)
         {
-            cout << "Hey! you weren't supposed to enter 5!" << endl;
+            cout << "Hey! you weren't supposed to enter 5." << endl;
             system("pause");
             break;
         }
